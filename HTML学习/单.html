@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<!--
+    表单的是使用
+-->
+    <form action="damo.py">
+        <label>Mame    <input name="Name" type="text" name="" value="Hello" /><br/></label>
+        <label for="Psw">Password</label><input id="Psw"  name="Psw" type="password" /><br/>
+        猫 <input name="type" type="radio" value="Cat" checked = "checked"/><br/>
+        狗  <input name="type" type="radio" value="Dog"/><br/>
+        可以摸肚子猫 <input name="Touch" type="checkbox" value="Touch"/><br/>
+        可以翻滚 <input name="Touch" type="checkbox" value="Fall"/><br/>
+        <textarea>测试字符框</textarea>
+
+        <!--
+            常常该用 div + li + CSS 替换
+        -->
+        <select method="get">
+            <option>白猫</option>
+            <option selected="selected" >橘猫</option>
+            <option>狸花猫</option>
+            <option>缅因猫</option>
+        </select>
+
+        <input type="button" value="喵" />
+        <input type="submit" />
+        <input type="reset"  />
+        
+    </form>
+</body>
+</html> 

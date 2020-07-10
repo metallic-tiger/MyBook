@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+    <form>
+        <table width = "700" align="center">
+            <caption > 详细个人信息</caption>
+            <tbody>
+                <tr>
+                    <td><label for="Name">姓名</label></td>
+                    <td><input id="Name" type="text" name="Name" value="请输入姓名"></td>
+                </tr>
+                <tr>
+                    <td>种族</td>
+                    <td>
+                        <label>猫<input id="Type" type="radio" name="Type" checked="checked" value="猫"></label>
+                        <label>爬行类<input id="Type" type="radio" name="Type"  value="爬行类"></label>
+                        <label>犬<input id="Type" type="radio" name="Type"  value="犬"></label>
+                        <label>其他<input id="Type" type="radio" name="Type"  value="其他"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>所在地</td>
+                    <td><select id= "in" name ="in">
+                        <option value="Dong">东</option>
+                        <option value="Xin">新</option>
+                        <option value="Rank">Rank</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>
+                        宣言
+                    </td>
+                    <td>
+                        <textarea id = "Fat" name="Fats">
+                            Hello &nbsp; World
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>爱好</td>
+                    <td><label></label>
+                        <label>A<input type="checkbox" Name="Like" value="Pr"></label>
+                        <label>B<input type="checkbox" Name="Like" value="TV"></label>
+                        <label>C<input type="checkbox" Name="Like" value="VLog"></label>
+                        <label>D<input type="checkbox" Name="Like" value="SAI"></label>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td> <div width="30%"></div></td>
+                <td><input type="submit" src="../untitled.png"></td>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
