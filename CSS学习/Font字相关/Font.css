@@ -1,0 +1,13 @@
+body{
+    font-size: 16px;
+    background-color: rgba(255, 192, 203, 0.897);
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.CaptionText{
+    color: #424242;
+    font-size: 100px;
+    font-family: Arial,"Microsoft YaHeu","黑体";
+    font-weight: 800;
+}
