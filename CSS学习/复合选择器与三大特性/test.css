@@ -1,0 +1,24 @@
+/* 后代选择器 */
+.Top{
+    background-color: wheat;
+    width: 100%;
+    height: 25%;
+}
+.Top a{
+    color: pink;
+    font-size: 25px;
+}
+/* 子代选择器 */
+.Left>a{
+    color: brown;
+}
+
+/* 交集选择器 */
+p.rad{
+    color:red;
+}
+
+/* 并集选择器 */
+p,span{
+    color:red;
+}
