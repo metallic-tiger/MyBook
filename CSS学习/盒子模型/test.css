@@ -1,0 +1,38 @@
+.Top{
+    height: 15%;
+    background-color:rgb(182, 182, 182);
+    margin :0 10%;
+}
+
+.LeftBox{
+    margin-top: 3px;
+    width: 45%;
+    margin:0 2%;
+    display: inline-block;
+    
+}
+.RigthBox{
+    margin-top: 10px;
+    width: 45%;
+    margin: 0 2%;
+    display: inline-block;
+}
+.Button{
+    height: 45px;
+    font-size: 12px;
+    display:inline-block;
+    background-color:rgb(163, 116, 124);
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
+    margin: 0 3px;
+    border-radius: 10px;
+    
+}
+.Button:hover{
+    background-color:rgb(131, 97, 103);
+    /*
+    行高度 列高度 模糊大小 阴影大小 颜色
+    */
+    box-shadow: 0px 0px 12px 2px #fff;
+}
