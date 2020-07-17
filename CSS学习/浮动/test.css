@@ -1,0 +1,65 @@
+.one,
+.two{
+width: 200px;
+height: 200px;
+float: left;
+margin: 10px;
+}
+.one{
+    background-color: rgba(255, 192, 203,0.5);
+    font-size: 48px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.5);
+    box-shadow:0 0 25px 51px honeydew;
+}
+.two{
+    background-color: red;
+}
+.thee{
+    height: 600px;
+    background-color:gray;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+.Block{
+    width: 80%;
+    height: 60%;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.L{
+    width: 20%;
+    height: 600px;
+    float: left;
+    background-color: #00e0f0;
+}
+.R{
+    width: 80%;
+    height: 600px;
+    float: right;
+}
+.RElemTop{
+    width: 200px;
+    height: 280px;
+    float: right;
+
+    margin-bottom: 40px;
+    margin-left: 35px;
+    background-color: #00aeff;
+}
+.RElemBotton{
+    width: 200px;
+    height: 280px;
+    float: right;
+    margin-left: 35px;
+    background-color: #00aeff;
+}
+.RElemTop:hover,
+.RElemBotton:hover{
+    background-color: #05ffff;
+    box-shadow: 0 15px 20px 2px #fff;
+}
