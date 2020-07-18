@@ -2,12 +2,14 @@
     margin: 0;
     border: 0;
     padding: 0;
+    outline: 0;
 }
 body{
     width: 1919px;
     height: 3321px;
     background-color: #f3f5f7;
 }
+
 .w{
     width: 1201px;
     margin: 0 auto;

@@ -1,0 +1,34 @@
+body{
+    width: 1200px;
+    height: 8000px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.w{
+    width: 1000px;
+    margin: 0 auto;
+}
+.Temp{
+    position: relative;
+    background-color: pink;
+    height: 300px;
+}
+.Tag-L{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    height: 100px;
+    width: 60px;
+    background-color: #fbfbfb88;
+}
+.Tag-R{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    height: 100px;
+    width: 60px;
+    background-color: #fbfbfb88;
+}
