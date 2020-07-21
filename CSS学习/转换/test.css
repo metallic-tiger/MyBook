@@ -1,0 +1,41 @@
+*{
+    top:50%;
+    left: 50%;
+}
+.transfrom{
+    width: 200px;
+    height: 200px;
+    margin: -100px;
+    position: absolute;
+
+    
+    /*过度效果*/
+    transition: all .5s ease-in-out;
+    background-color: pink;
+}
+
+.transfrom:hover{
+    transform: translateX(100px);
+    background-color: hotpink;
+    transform: rotate(100deg);
+    transform: scale(2,2);
+}
+
+.move{
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+
+    animation-name: BlockShift;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+/*动画*/
+@keyframes BlockShift{
+0%{
+    transform: translateX(0px);
+}
+100%{
+    transform: translateX(1000px);
+}
+}
