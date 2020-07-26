@@ -2,6 +2,9 @@
     top:50%;
     left: 50%;
 }
+body{
+    perspective: 1000px;
+}
 .transfrom{
     width: 200px;
     height: 200px;
@@ -38,4 +41,24 @@
 100%{
     transform: translateX(1000px);
 }
+}
+.perspective{
+    transform-style: preserve-3d;
+    transform: translate3d(100px,100px,0);
+    width: 100px;
+    height: 100px;
+    background-color:skyblue;
+    transition:all 0.5s ;
+}
+.perspective:hover{
+    transform:translate3d(100px,100px,100px) rotateX(30deg) rotateY(90deg);
+}
+.rtbox{
+    width: 50px;
+    height: 50px;
+    background-color:deepskyblue;
+    transition:all 0.5s ;
+}
+.rtbox:hover{
+    transform:translate3d(100px,100px,100px) rotateX(30deg) rotateY(90deg);
 }
