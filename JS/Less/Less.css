@@ -1,0 +1,12 @@
+body {
+  background-color: pink;
+}
+body header {
+  font-size: 12px;
+}
+body header a {
+  background-color: pink;
+}
+body header a:hover {
+  background-color: #f2f2f2;
+}

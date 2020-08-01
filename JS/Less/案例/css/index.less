@@ -1,0 +1,48 @@
+@import "common";
+
+body{
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background-color: @basewhite;
+    line-height: 1.5;
+}
+
+.Search-content{
+    display: flex;
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 88rem /@baseFrom;
+    background-color: hotpink;
+
+    .Search-content-class{
+        width: 44rem/@baseFrom ;
+        height: 70rem/@baseFrom ;
+        margin: 11rem/@baseFrom  24rem/@baseFrom;
+        background-color: pink;
+    }
+    .Search-content-login{
+        width: 44rem/@baseFrom ;
+        height: 70rem/@baseFrom ;
+        margin: 11rem/@baseFrom  24rem/@baseFrom;
+        background-color: pink;
+    }
+    .Search-content-Search{
+        flex: 1;
+        height: 70rem/@baseFrom ;
+        padding: 10%;
+        input{
+            width: 100%;
+            height: 70%;
+            outline: none;
+            margin: 0;
+            border:1px solid #0aa;
+            border-radius: 23px;
+        }
+
+    }
+}
+

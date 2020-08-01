@@ -1,0 +1,25 @@
+// 设定划分份数
+@no : 15;
+@baseFrom : 50;
+@basewhite : #f2f2f2;
+
+html{
+    font-size: 50px;
+}
+// 设置页面的文字大小
+//320
+@media screen and (min-width :320){
+    html{
+        font-size: 320 / @no px;
+    }
+}
+@media screen and (min-width :360){
+    html{
+        font-size: 360 / @no px;
+    }
+}
+@media screen and (min-width :375){
+    html{
+        font-size: 375 / @no px;
+    }
+}
