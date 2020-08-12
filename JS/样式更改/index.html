@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="./bootstrap/css/bootstrap.css" >
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css" >
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="./bootstrap/js/bootstrap.min.js" ></script>
+<style>
+    body{
+        background-color: #bfbfbf;
+    }
+    .nav{
+        width: 80%;
+        background-color: #ececec;
+    }
+    .Rad{
+        flex : 1;
+        height: 100px;
+        padding: 3px;
+        text-align: center;
+        line-height: 12px;
+        background-color: #fbb;
+    }
+    .Ori{
+        flex : 1;
+        height: 100px;
+        padding: 3px;
+        text-align: center;
+        line-height: 12px;
+        background-color: #8cc;
+    }
+    .Null{
+        flex : 1;
+        height: 100px;
+        padding: 3px;
+        text-align: center;
+        line-height: 12px;
+    }
+</style>
+</head>
+<body>
+    <div class="container nav">
+        <div class="row">
+            <div id="1" class="col-lg-3 Rad" onmouseover='touch("1")'onmouseout='out("1")'></div>
+            <div id="2" class="col-lg-3 Null" onmouseover='touch("2")' onmouseout='out("2")'></div>
+            <div id="3" class="col-lg-3 Rad" onmouseover='touch("3")' onmouseout='out("3")'></div>
+            <div id="4" class="col-lg-3 Null" onmouseover='touch("4")' onmouseout='out("4")'></div>
+        </div>
+    </div>
+    <div id="RBG">Hello</div>
+    <script>
+        function touch(aim){
+            aim = document.getElementById(aim);
+            aim.innerHTML="Touch"
+            aim.className='col-lg-3 Ori'
+        }
+        function out(aim){
+            aim = document.getElementById(aim);
+            //错误
+            aim.innerHTML="Out"
+            aim.className='col-lg-3 Rad'
+        }
+        
+        // 40 色
+        a=[ "51","54","58","5b",
+            "61","64","68","6b",
+            "71","74","78","7b",
+            "81","84","88","8b",
+            "91","94","98","9b",
+            "a1","a4","a8","ab",
+            "b1","b4","b8","bb",
+            "c1","c4","c8","cb",
+            "d1","d4","d8","db",
+            "e1","e4","e8","eb"
+        ];
+        r = 0;
+        b = 12;
+        g = 24;
+        function RGBchange(){
+            rbg = document.getElementById('RBG');
+            console.log(rbg);
+            rbg.style.backgroundColor ="#"+a[r]+a[b]+a[g];
+            
+            r=(r+1)%40;
+            b=(b+1)%40;
+            g=(g+1)%40;
+            console.log("#"+a[r]+a[b]+a[g]);
+        }
+    
+        setInterval(function(){RGBchange()},100);
+    </script>
+    
+</body>
+</html>

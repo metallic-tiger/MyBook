@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="./test.js"></script>
+</head>
+<body>
+<div id="nav"></div>
+<p id="p1">Hello World</p>
+<input id="BT" type="button" value="Check" onclick="datafunction()">
+<script>
+    var Tag = document.createElement("p");
+    var Inner = document.createTextNode("这是一个新的段落。");
+    console.log(Tag.appendChild(Inner));
+    var Body = document.getElementById('nav');
+    Body.appendChild(Tag);
+</script>
+</body>
+</html>

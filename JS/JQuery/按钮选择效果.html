@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="./jquery-3.5.1/jquery-3.5.1.min.js"></script>
+<title>Document</title>
+<style>
+    body{
+        background-color: #f0f0f0;
+    }
+    .rad{
+        background-color: #E88;
+    }
+    .bled{
+        background-color: #88e;
+    }
+    .gren{
+        background-color: #8c8;
+    }
+    .gray{
+        background-color: gray;
+    }
+    .pink{
+        background-color: purple;
+    }
+    .hub{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        float: left;
+
+        top:50%;
+        left: 50%;
+        margin: -100px -600px;
+        width: 1200px;
+        height: 200px;
+        background-color: #fbfbfb;
+        border-radius: 100px;
+        box-shadow: 1px 6px 15px 2px #888;
+        line-height: 150px;
+    }
+    .tag{
+        flex:1;
+        border-radius: 100px;
+        margin: 45px;
+        box-shadow: 1px 4px 6px 2px #888;
+        text-align: center;
+        line-height: 100px;
+    }
+    
+    .taghover{
+        flex:2;
+        animation: hover ease-in-out 0.3s;
+        box-shadow: 1px 8px 15px 2px #bbb;
+    }
+    .tagunhover{
+        flex:1;
+        animation: unhover ease-in-out 0.3s;
+        box-shadow: 1px 4px 6px 2px #888;
+    }
+     @keyframes hover {
+        0%{
+            flex:1;
+            box-shadow: 1px 4px 6px 2px #888;
+        }
+        100%{
+            flex:2;
+            box-shadow: 1px 8px 15px 2px #bbb;
+        }
+    } 
+    @keyframes unhover {
+        0%{
+            flex:2;
+            box-shadow: 1px 8px 15px 2px #bbb;
+        }
+        100%{
+            flex:1;
+            box-shadow: 1px 4px 6px 2px #888;
+        }
+    } 
+</style>
+</head>
+<body>
+<div class="hub">
+    <div class="tag rad">He!</div>
+    <div class="tag bled">He!</div>
+    <div class="tag gren">He!</div>
+    <div class="tag gray">He!</div>
+    <div class="tag pink">He!</div>
+</div>
+<script>
+    $(document).ready(
+        $('.tag').mouseover(
+            function(){
+                $(this).removeClass("tagunhover"),
+                $(this).addClass("taghover"),
+                console.log()
+            }
+        ),
+        $('.tag').mouseout(
+            function(){
+                $(this).removeClass("taghover"),
+                $(this).addClass("tagunhover"),
+                console.log(this)
+            }
+        )
+    )
+</script>
+</body>
+</html>

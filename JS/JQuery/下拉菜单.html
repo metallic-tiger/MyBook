@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="./jquery-3.5.1/jquery-3.5.1.min.js"></script>
+<style>
+    .nav li{
+        position: relative;
+        list-style: none;
+        display: inline-block;
+    }
+    a{
+        display: inline-block;
+        margin:  0 15px;
+        padding: 0 15px;
+        height: 200px;
+        background-color: pink;
+    }
+    .top{
+        position: absolute;
+        padding: 0;
+    }
+    .top li{
+        list-style: none;
+    }
+    
+</style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href=""># </a>
+            <ul class="top">
+                <li><a href="">##</a></li>
+                <li><a href="">##</a></li>
+            </ul>
+        </li>
+        <li><a href="">#</a></li>
+        <li><a href="">#</a></li>
+    </ul>
+<script>
+$(".top").hide();
+$(".nav>li").mouseover(function(){
+    console.log($(this).children("ul").children('li'));
+    $(this).children("ul").show();
+})
+$(".nav>li").mouseout(function(){
+    $(this).children('ul').hide();
+})
+console.log($(".nav").html()); 
+</script>
+</body>
+</html>
