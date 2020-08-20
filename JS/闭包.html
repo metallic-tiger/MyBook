@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<ul class="nav">
+    <li>柠檬    </li>
+    <li>菠萝    </li>
+    <li>猕猴桃  </li>
+    <li>哈密瓜  </li>
+    <li>香橙    </li>
+</ul>
+<script>
+    var lis = document.querySelector('.nav').querySelectorAll('li');
+    for( var i = 0 ;i < lis.length ;i++){
+        lis[i].index = i;
+        lis[i].onclick = function(){
+            console.log(this.index);
+        }
+    }
+    //闭包案例 1
+    //不建议 使用闭包，可能产生内存泄露问题
+    for( var i = 0 ;i < lis.length ;i++){
+        (function(index){
+            lis[i].onclick = function(){
+                console.log(index*3);
+            }
+        })(i);
+        
+    }
+    //闭包案例 2
+    for( var i = 0 ;i < lis.length ;i++){
+        (function(i){
+            setTimeout(function(){
+            console.log(lis[i].innerHTML);
+        },3000)
+        })(i);
+    }
+</script>
+</body>
+</html>

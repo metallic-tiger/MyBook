@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<script>
+   class Fa{
+       constructor(){
+           this.test= 1;
+       }
+       Hello(){
+           console.log('Hello');
+       }
+   };
+   class Son extends Fa{
+       constructor(){
+           super()
+       }
+   };
+
+   a = new Son();
+   a.Hello();
+    
+</script>
+<body>
+<a>Hello World</a>
+</body>
+</html>
